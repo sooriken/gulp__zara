@@ -1,4 +1,48 @@
 .header
-    background-color: pink
+    background-color: white
+    padding: 60px 100px
+    line-height: 21px
+    text-transform: uppercase
+    letter-spacing: 21px
+    font-weight: 600
     &__inner
-        @import "flex__jcsb"
+        display: grid
+        gap: 20px
+        grid-template-columns: repeat(3, 1fr)
+        
+    &-menu
+        display: flex
+        &__button
+            display: flex
+            flex-direction: column
+            width: 30px
+            &-up
+                height: 4px
+                border-bottom: 2px solid #383838
+            &-down
+                height: 12px
+                border-bottom: 2px solid #383838
+                width: 60%
+        &__title
+            padding-left: 20px
+    &-search
+        text-align: center
+    &-cart
+        display: flex
+        justify-content: flex-end
+        &__stroke
+            width: 150px
+            position: relative
+            &::after
+                content: ''
+                display: block
+                height: 2px
+                width: 100%
+                background-color: #383838
+                top: 9px
+                left: 0
+                position: absolute
+        &__title
+            padding-left: 20px
+        &__count
+            padding-left: 20px
