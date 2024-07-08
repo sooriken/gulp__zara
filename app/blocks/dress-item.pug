@@ -1,0 +1,8 @@
+mixin dressItem(description, price)
+    .dress-item
+        img.dress-item__image(src='../images-min/dress-item__image.png' alt="Dress example")
+        .dress-item__inner
+            .dress-item__rectangle
+            .dress-item__text
+                .dress-item__text-name= description 
+                .dress-item__text-price= price

@@ -51,6 +51,7 @@
     &-item
         width: 100%
         position: relative
+        display: none
         &__image
             width: 100%
             height: auto
@@ -65,8 +66,11 @@
             letter-spacing: 0.15em
         &__text
             background: rgba(255,255,255, 0.8)
+            max-width: 200px
             &-price
                 font-weight: bold
+        &--active
+            display: block
     &-slider
         display: flex
         justify-content: center
@@ -80,10 +84,11 @@
             background-color: #383838
             opacity: 30%
             margin-right: 30px
+            &--active
+                height: 30px
+                opacity: 1
+                margin-top: -20px
         &__item:last-child 
             margin-right: 0
-        &__item--active
-            height: 30px
-            opacity: 1
-            margin-top: -20px
+     
         

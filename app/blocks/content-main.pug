@@ -1,19 +1,18 @@
-mixin content-main 
+include ./dress-item
+
+mixin contentMain 
     .content
         .content-main__inner
             .content-main
                 .content-main__dress
-                    .dress-item
-                        img.dress-item__image(src='../images-min/dress-item__image.png' alt="Dress example")
-                        .dress-item__inner
-                            .dress-item__rectangle
-                            .dress-item__text
-                                .dress-item__text-name COLOUR BLOCK FAUX <br> SUEDE T-SHIRT 
-                                .dress-item__text-price $15
+                    +dressItem ('COLOUR BLOCK FAUX SUEDE T-SHIRT', '$10')
+                    +dressItem ('COLOUR BLOCK FAUX SUEDE T-SHIRT', '$11')
+                    +dressItem ('COLOUR BLOCK FAUX SUEDE T-SHIRT', '$12')
+                    +dressItem ('COLOUR BLOCK FAUX SUEDE T-SHIRT', '$13')
+                    +dressItem ('COLOUR BLOCK FAUX SUEDE T-SHIRT', '$14')
                     .dress-slider
                         a.dress-slider__item(href="#")
                         a.dress-slider__item(href="#")
-                        // "--active" модификатор
                         a.dress-slider__item(href="#")
                         a.dress-slider__item(href="#")
                         a.dress-slider__item(href="#")
