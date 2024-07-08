@@ -1,2 +1,2 @@
-const module = 'module'
+const module = 'module';
 export default module;

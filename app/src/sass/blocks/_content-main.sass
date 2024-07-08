@@ -1,5 +1,4 @@
 .content
-    min-height: 500px
     background-color: #fff
     z-index: 10
     display: flex
@@ -16,6 +15,7 @@
             flex-grow: 1
         &__dress
             width: 40%
+            height: 100%
             margin: auto auto
             display: flex
             flex-direction: column 
@@ -58,21 +58,20 @@
             position: absolute
             display: flex
             justify-content: flex-end
-            width: 100%
-            height: 100%
+            width: 100% 
             top: 50%
-            right: 10px
-            font-size: 8px
+            right: 10%
             line-height: 150%
             letter-spacing: 0.15em
         &__text
+            background: rgba(255,255,255, 0.8)
             &-price
                 font-weight: bold
     &-slider
         display: flex
         justify-content: center
         position: absolute
-        bottom: 0
+        bottom: 60px
         left: 50%
         transform: translateX(-50%)
         &__item
@@ -83,3 +82,8 @@
             margin-right: 30px
         &__item:last-child 
             margin-right: 0
+        &__item--active
+            height: 30px
+            opacity: 1
+            margin-top: -20px
+        
