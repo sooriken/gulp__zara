@@ -24,6 +24,6 @@ module.exports = {
         extensions: ['.js', '.jsx']
     }
 };
-
+ 
 module.exports = config;
 

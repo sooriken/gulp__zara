@@ -1,6 +1,6 @@
 include ./blocks/main-page__nav
 include ./blocks/header
-include ./blocks/content
+include ./blocks/content-main
 include ./blocks/footer
 
 doctype html
@@ -24,6 +24,6 @@ body
     .page    
         //+mainNav
         +header 
-        +content   
-        +footer
+        +content-main
+        // +footer
 script(src="./js-bundle/main.bundle.js")

@@ -1,12 +1,24 @@
 mixin header
     .header
         .header__inner
-            .header-menu
-                a.header-menu__button(href="#")
-                    .header-menu__button-up
-                    .header-menu__button-down
-                .header-menu__title menu
-            .header-search srch
+            .header-menu(id="headerMenu")
+                a.header-menu__inner(href="#") 
+                    .header-menu__button
+                        .header-menu__button-up
+                        .header-menu__button-down
+                    .header-menu__title menu
+                // смена кнопки при нажатии (class == 'hidden-block)
+                a.header-close.hidden-block
+                    .header-close__icon 
+                        img(src='../images-min/header-close__icon.svg' alt="Close icon")
+                    .header-close__text close
+            .header-search(id="headerSearch")
+                a.header-search__button(href="#") srch
+                // смена кнопки при нажатии (class == 'hidden-block)
+                a.header-close.hidden-block
+                    .header-close__icon 
+                        img(src='../images-min/header-close__icon.svg' alt="Close icon")
+                    .header-close__text close
             .header-cart
                 .header-cart__stroke
                 .header-cart__title cart

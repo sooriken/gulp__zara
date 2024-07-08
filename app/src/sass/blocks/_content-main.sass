@@ -1,0 +1,85 @@
+.content
+    min-height: 500px
+    background-color: #fff
+    z-index: 10
+    display: flex
+    flex-direction: column
+    &-main
+        display: grid
+        gap: 0px
+        grid-template-columns: 1fr 1fr
+        position: relative
+        flex-grow: 1
+        &__inner
+            display: flex
+            flex-direction: column
+            flex-grow: 1
+        &__dress
+            width: 40%
+            margin: auto auto
+            display: flex
+            flex-direction: column 
+            justify-content: center
+            position: relative
+        &__model
+            position: relative
+            &-image
+                position: absolute
+                height: 100%
+                width: auto
+                top: 0
+                left: 0
+        &__logo
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 10%
+            &__image
+                width: 100%
+                height: auto
+        &__shop
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 60px
+            line-height: 21px
+            text-transform: uppercase
+            letter-spacing: 21px
+            font-weight: 600
+.dress
+    &-item
+        width: 100%
+        position: relative
+        &__image
+            width: 100%
+            height: auto
+        &__inner
+            position: absolute
+            display: flex
+            justify-content: flex-end
+            width: 100%
+            height: 100%
+            top: 50%
+            right: 10px
+            font-size: 8px
+            line-height: 150%
+            letter-spacing: 0.15em
+        &__text
+            &-price
+                font-weight: bold
+    &-slider
+        display: flex
+        justify-content: center
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        &__item
+            width: 2px
+            height: 10px
+            background-color: #383838
+            opacity: 30%
+            margin-right: 30px
+        &__item:last-child 
+            margin-right: 0

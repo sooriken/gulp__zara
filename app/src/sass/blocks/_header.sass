@@ -1,21 +1,31 @@
 .header
-    background-color: white
-    padding: 60px 100px
+    padding: 30px 100px
     line-height: 21px
     text-transform: uppercase
     letter-spacing: 21px
     font-weight: 600
+    z-index: 15
+    position: absolute
+    width: 100%
+    top: 0
+    left: 0
     &__inner
         display: grid
         gap: 20px
-        grid-template-columns: repeat(3, 1fr)
-        
+        grid-template-columns: 1fr 2fr 1fr
     &-menu
         display: flex
+        cursor: pointer
+        opacity: 1
+        visibility: visible
+        padding: 30px 0
+        &__inner
+            display: flex
         &__button
             display: flex
             flex-direction: column
             width: 30px
+            margin-right: 20px
             &-up
                 height: 4px
                 border-bottom: 2px solid #383838
@@ -23,15 +33,19 @@
                 height: 12px
                 border-bottom: 2px solid #383838
                 width: 60%
-        &__title
-            padding-left: 20px
     &-search
-        text-align: center
+        display: flex
+        justify-content: center
+        cursor: pointer
+        opacity: 1
+        visibility: visible
+        padding: 30px 0
     &-cart
         display: flex
         justify-content: flex-end
+        padding: 30px 0
         &__stroke
-            width: 150px
+            flex-grow: 1
             position: relative
             &::after
                 content: ''
@@ -46,3 +60,8 @@
             padding-left: 20px
         &__count
             padding-left: 20px
+    &-close
+        display: flex
+        -webkit-transition: 1s
+        &__icon
+            margin-right: 20px
