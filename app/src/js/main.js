@@ -16,10 +16,21 @@ function switchButton(id) {
     };
 };
 
+function switchBlock(blockId) {
+    if(document.getElementById(blockId).classList.contains("hidden-block")) {
+        document.getElementById(blockId).classList.remove ("hidden-block");
+    } else {
+        document.getElementById(blockId).classList.add ("hidden-block");
+    };
+};
 
 // онклик на кнопку меню в хэдере 
 document.getElementById('headerMenu').addEventListener('click', function() {
   switchButton('headerMenu');
+  switchBlock('menu');
+  switchBlock('content');
+  //document.getElementById("menu").classList.remove ("hidden-block");
+  //document.getElementById("content").classList.add ("hidden-block");
 });
 
 // онклик на кнопку поиск в хэдере

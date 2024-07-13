@@ -3,7 +3,8 @@ include ./dress-item
 mixin contentMain 
     .content
         .content-main__inner
-            .content-main
+            //
+            .content-main(id="content")
                 .content-main__dress
                     +dressItem ('COLOUR BLOCK FAUX SUEDE T-SHIRT', '$10')
                     +dressItem ('COLOUR BLOCK FAUX SUEDE T-SHIRT', '$11')
@@ -21,6 +22,16 @@ mixin contentMain
                 .content-main__logo
                     img.content-main__logo__image(src='../images-min/logo.png' alt="Logo")
                 a.content-main__shop(href="#") shop
+            //
+            .menu.hidden-block(id="menu")
+                .menu__inner
+                    .menu__text.menu__text--woman Woman
+                .menu__inner
+                    .menu__text.menu__text--man Man
+                    .menu__text.menu__text--kids Kids
+                .menu__inner
+                    .menu__text.menu__text--stories Stories
+                    .menu__text.menu__text--sale SALE
 //       input(type="text" id="date" autocomplete="off" placeholder="Выбор даты")
         
         
